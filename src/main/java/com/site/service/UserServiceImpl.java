@@ -9,7 +9,7 @@ import com.site.model.User;
                                                         
 @Service("userService")
 
-public abstract class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService{
 	
 	@Autowired
 	private UserMapper userMapper;

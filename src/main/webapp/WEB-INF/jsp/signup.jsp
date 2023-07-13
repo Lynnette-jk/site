@@ -99,7 +99,7 @@
 				<div class="row">
 					<div class="col-lg-6">
 						<form:form id="myForm" method="post"
-							class="bs-example form-horizontal" commandName="student">
+							class="bs-example form-horizontal" commandName="user">
 							<fieldset>
 								<legend>User Signup Form</legend>
 

@@ -34,7 +34,7 @@
 		<property name="driverClassName"
 			value="com.mysql.jdbc.Driver" />
 		<property name="url"
-			value="jdbc:mysql://localhost:3306/userEnrollment?autoReconnect=true&amp;createDatabaseIfNotExist=true&amp;" />
+			value="jdbc:mysql://localhost:3306/userenrollment;" />
 		<property name="username" value="root" />
 		<property name="password" value="root" />
 	</bean>
@@ -43,7 +43,7 @@
 		class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="typeAliasesPackage"
-			value="com.july.site.model" />
+			value="com.site.model" />
 		<property name="mapperLocations"
 			value="classpath*:com/site/mappers/*.xml" />
 	</bean>
