@@ -16,7 +16,7 @@ public interface UserMapper {
 	@Select("SELECT USERNAME as userName, PASSWORD as password, "
 			+ "FIRSTNAME as firstName, LASTNAME as lastName, "
 			+ "DATEOFBIRTH as dateOfBirth, EMAILADDRESS as emailAddress "
-			+ "FROM student WHERE userName = #{userName}")
+			+ "FROM user WHERE userName = #{userName}")
 	public User getUserByUserName(String userName);
 
 	
