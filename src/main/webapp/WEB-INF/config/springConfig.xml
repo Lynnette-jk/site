@@ -16,7 +16,7 @@
 	<!-- Enable Spring MVC -->
 	<mvc:annotation-driven />
 	<context:component-scan
-		base-package="com.july.site" />
+		base-package="com.site" />
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -45,7 +45,7 @@
 		<property name="typeAliasesPackage"
 			value="com.july.site.model" />
 		<property name="mapperLocations"
-			value="classpath*:com/july/site/mappers/*.xml" />
+			value="classpath*:com/site/mappers/*.xml" />
 	</bean>
 
 	<bean id="sqlSession"
@@ -54,7 +54,7 @@
 	</bean>
 
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.july.site.mappers" />
+		<property name="basePackage" value="com.site.mappers" />
 	</bean>
 
 	<tx:annotation-driven

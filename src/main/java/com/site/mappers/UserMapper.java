@@ -10,7 +10,7 @@ public interface UserMapper {
 			+ "lastName, dateOfBirth, emailAddress) VALUES"
 			+ "(#{userName},#{password}, #{firstName}, #{lastName},"
 			+ "#{dateOfBirth}, #{emailAddress})")
-	@Options(useGeneratedKeys=true, keyProperty="id", flushCache=true, keyColumn="id")
+	@Options(useGeneratedKeys=true, keyProperty="id", keyColumn="id")
 	public void insertUser(User user);
 		
 	@Select("SELECT USERNAME as userName, PASSWORD as password, "

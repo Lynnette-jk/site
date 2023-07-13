@@ -6,10 +6,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.site.mappers.UserMapper;
 import com.site.model.User;
-
+                                                        
 @Service("userService")
 
-public class UserServiceImpl implements UserService{
+public abstract class UserServiceImpl implements UserService{
 	
 	@Autowired
 	private UserMapper userMapper;
